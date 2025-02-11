@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 3,
+    "name": "Bluesky One Click See Less/Block/Both",
+    "version": "1.4",
+    "description": "Adds \"See Less\", \"Block\" and \"Do Both\" under Bluesky posts.",
+    "permissions": [],
+    "icons": {
+        "128": "./stop_128x128.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["https://bsky.app/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
